@@ -1,0 +1,1082 @@
+1648827687930	geckodriver	INFO	Listening on 127.0.0.1:35445
+1648827687938	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofileNqtdfk"
+*** You are running in headless mode.
+1648827688518	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileNqtdfk/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1648827690207	Marionette	INFO	Listening on port 40089
+1648827690273	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648827690373	geckodriver	INFO	Listening on 127.0.0.1:34841
+1648827690378	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofilePTSpiE"
+*** You are running in headless mode.
+1648827690879	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilePTSpiE/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1648827692306	Marionette	INFO	Listening on port 38949
+1648827692419	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648827692575	geckodriver	INFO	Listening on 127.0.0.1:56265
+1648827692581	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofilewy6ZCA"
+*** You are running in headless mode.
+1648827693130	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilewy6ZCA/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1648827694560	Marionette	INFO	Listening on port 44295
+1648827694643	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648827694694	geckodriver	INFO	Listening on 127.0.0.1:40161
+1648827694698	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofileplaOvu"
+*** You are running in headless mode.
+1648827695259	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileplaOvu/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1648827697049	Marionette	INFO	Listening on port 44519
+1648827697128	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648827697161	geckodriver	INFO	Listening on 127.0.0.1:52847
+1648827697166	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofileUnx0pd"
+*** You are running in headless mode.
+1648827697693	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileUnx0pd/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1648827699471	Marionette	INFO	Listening on port 37921
+1648827699512	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648827699546	geckodriver	INFO	Listening on 127.0.0.1:42223
+1648827699552	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofiletWxoF8"
+*** You are running in headless mode.
+1648827700076	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofiletWxoF8/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1648827701528	Marionette	INFO	Listening on port 33679
+1648827701591	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648827701634	geckodriver	INFO	Listening on 127.0.0.1:52027
+1648827702643	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofilepTL4zu"
+*** You are running in headless mode.
+1648827703275	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilepTL4zu/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1648827704853	Marionette	INFO	Listening on port 37201
+1648827704984	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648827705071	geckodriver	INFO	Listening on 127.0.0.1:48645
+1648827705077	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofileZnOsYY"
+*** You are running in headless mode.
+1648827705613	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileZnOsYY/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1648827707221	Marionette	INFO	Listening on port 36153
+1648827707310	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648827707344	geckodriver	INFO	Listening on 127.0.0.1:52799
+1648827707351	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofilevQV4pl"
+*** You are running in headless mode.
+1648827707849	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilevQV4pl/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1648827709249	Marionette	INFO	Listening on port 35143
+1648827709280	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648827709348	geckodriver	INFO	Listening on 127.0.0.1:53173
+1648827709353	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofilebEoMXy"
+*** You are running in headless mode.
+1648827709788	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilebEoMXy/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1648827710928	Marionette	INFO	Listening on port 34581
+1648827710980	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648827711013	geckodriver	INFO	Listening on 127.0.0.1:42643
+1648827711016	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofile663Gml"
+*** You are running in headless mode.
+1648827711385	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile663Gml/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1648827712490	Marionette	INFO	Listening on port 34135
+1648827712534	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648827712560	geckodriver	INFO	Listening on 127.0.0.1:53395
+1648827712563	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofileyse7z1"
+*** You are running in headless mode.
+1648827713001	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileyse7z1/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1648827714431	Marionette	INFO	Listening on port 46547
+1648827714489	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648827714567	geckodriver	INFO	Listening on 127.0.0.1:56441
+1648827715571	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofile9RJdQB"
+*** You are running in headless mode.
+1648827715946	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile9RJdQB/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1648827717178	Marionette	INFO	Listening on port 33303
+1648827717304	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648827717373	geckodriver	INFO	Listening on 127.0.0.1:39633
+1648827717380	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofilen7OdA1"
+*** You are running in headless mode.
+1648827717862	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilen7OdA1/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1648827719260	Marionette	INFO	Listening on port 42991
+1648827719395	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648827719437	geckodriver	INFO	Listening on 127.0.0.1:51495
+1648827719439	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofileCoy2dF"
+*** You are running in headless mode.
+1648827719850	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileCoy2dF/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1648827720938	Marionette	INFO	Listening on port 45805
+1648827720960	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648827720984	geckodriver	INFO	Listening on 127.0.0.1:33739
+1648827720987	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofileKbCsT5"
+*** You are running in headless mode.
+1648827721371	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileKbCsT5/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1648827723167	Marionette	INFO	Listening on port 43049
+1648827723253	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648827723304	geckodriver	INFO	Listening on 127.0.0.1:57129
+1648827723308	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofileb2tHWp"
+*** You are running in headless mode.
+1648827723752	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileb2tHWp/search.json.mozlz4", (void 0)))
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Sandbox: Unexpected EOF, op 0 flags 00 path /sys/devices/system/cpu/present
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1648827724655	geckodriver	INFO	Listening on 127.0.0.1:60549
+1648827724666	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofileWTW0mz"
+Exiting due to channel error.
+Exiting due to channel error.
+1648827724694	geckodriver	INFO	Listening on 127.0.0.1:33413
+1648827724699	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofileL4s2gw"
+*** You are running in headless mode.
+1648827725099	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileL4s2gw/search.json.mozlz4", (void 0)))
+1648827726123	Marionette	INFO	Listening on port 37709
+1648827726234	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648827726527	geckodriver	INFO	Listening on 127.0.0.1:47173
+1648827726535	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofile4t13PR"
+*** You are running in headless mode.
+1648827726984	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile4t13PR/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_PreferenceUpdate) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_PreferenceUpdate) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_PreferenceUpdate) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_PreferenceUpdate) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_PreferenceUpdate) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_PreferenceUpdate) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_PreferenceUpdate) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_PreferenceUpdate) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_PreferenceUpdate) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_PreferenceUpdate) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_PreferenceUpdate) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_PreferenceUpdate) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_PreferenceUpdate) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_PreferenceUpdate) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_PreferenceUpdate) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_PreferenceUpdate) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_PreferenceUpdate) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_PreferenceUpdate) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_PreferenceUpdate) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_PreferenceUpdate) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_PreferenceUpdate) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_PreferenceUpdate) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_PreferenceUpdate) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_PreferenceUpdate) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_PreferenceUpdate) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_PreferenceUpdate) Channel error: cannot send/recv
+
+1648827728745	Marionette	INFO	Listening on port 34719
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+1648827728820	Marionette	INFO	Stopped listening on port 34719
+1648827729365	geckodriver	INFO	Listening on 127.0.0.1:48393
+1648827729372	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofileyVxpI7"
+*** You are running in headless mode.
+1648827729911	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileyVxpI7/search.json.mozlz4", (void 0)))
+1648827731224	Marionette	INFO	Listening on port 33979
+1648827731305	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648827731568	geckodriver	INFO	Listening on 127.0.0.1:33999
+1648827731576	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofileIm6801"
+*** You are running in headless mode.
+1648827732138	Marionette	INFO	Marionette enabled
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PBrowser::Msg_UpdateDimensions) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_UpdateSharedData) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_GMPsChanged) Channel error: cannot send/recv
+
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileIm6801/search.json.mozlz4", (void 0)))
+1648827733454	Marionette	INFO	Listening on port 44117
+1648827733510	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: chrome://remote/content/marionette/dom.js, line 50: TypeError: this.mm is null
+1648827765203	geckodriver	INFO	Listening on 127.0.0.1:43153
+1648827765210	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofile6Ec2GN"
+*** You are running in headless mode.
+1648827765752	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile6Ec2GN/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1648827767476	Marionette	INFO	Listening on port 40389
+1648827767543	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648827773327	geckodriver	INFO	Listening on 127.0.0.1:48931
+1648827773334	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofilewnKSBQ"
+*** You are running in headless mode.
+1648827773845	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilewnKSBQ/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1648827775584	Marionette	INFO	Listening on port 38195
+1648827775665	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648827782540	geckodriver	INFO	Listening on 127.0.0.1:47035
+1648827782549	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofileUsHUeI"
+*** You are running in headless mode.
+1648827783205	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileUsHUeI/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1648827785046	Marionette	INFO	Listening on port 38355
+1648827785113	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648827789248	geckodriver	INFO	Listening on 127.0.0.1:34803
+1648827789257	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofileNQrox5"
+*** You are running in headless mode.
+1648827789863	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileNQrox5/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1648827791761	Marionette	INFO	Listening on port 33611
+1648827791798	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648827797421	geckodriver	INFO	Listening on 127.0.0.1:35001
+1648827797427	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofilelCEgE7"
+*** You are running in headless mode.
+1648827797963	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilelCEgE7/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1648827799695	Marionette	INFO	Listening on port 46491
+1648827799762	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648827893624	geckodriver	INFO	Listening on 127.0.0.1:50609
+1648827893631	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofile3Lc2uU"
+*** You are running in headless mode.
+1648827894284	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile3Lc2uU/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1648827896001	Marionette	INFO	Listening on port 36739
+1648827896085	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648827900655	geckodriver	INFO	Listening on 127.0.0.1:36333
+1648827900661	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofileUew4qi"
+*** You are running in headless mode.
+1648827901160	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileUew4qi/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1648827902945	Marionette	INFO	Listening on port 32785
+1648827902996	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648827907175	geckodriver	INFO	Listening on 127.0.0.1:59065
+1648827907181	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofileNNiboW"
+*** You are running in headless mode.
+1648827907697	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileNNiboW/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1648827909299	Marionette	INFO	Listening on port 37329
+1648827909427	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648827915834	geckodriver	INFO	Listening on 127.0.0.1:47363
+1648827915841	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofileL68kbg"
+*** You are running in headless mode.
+1648827916351	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileL68kbg/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1648827918131	Marionette	INFO	Listening on port 43397
+1648827918199	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648827923388	geckodriver	INFO	Listening on 127.0.0.1:42435
+1648827923396	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofilerjwZe2"
+*** You are running in headless mode.
+1648827923926	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilerjwZe2/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1648827925657	Marionette	INFO	Listening on port 34129
+1648827925745	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648827930905	geckodriver	INFO	Listening on 127.0.0.1:57901
+1648827930912	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofileAF6176"
+*** You are running in headless mode.
+1648827931538	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileAF6176/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1648827933036	Marionette	INFO	Listening on port 43647
+1648827933155	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648828028515	geckodriver	INFO	Listening on 127.0.0.1:55403
+1648828028523	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofilejwjtkb"
+*** You are running in headless mode.
+1648828029073	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilejwjtkb/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1648828030846	Marionette	INFO	Listening on port 36803
+1648828030950	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648828036706	geckodriver	INFO	Listening on 127.0.0.1:56427
+1648828037716	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofileAmpQe5"
+*** You are running in headless mode.
+1648828038273	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileAmpQe5/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1648828039917	Marionette	INFO	Listening on port 36029
+1648828039964	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648828045178	geckodriver	INFO	Listening on 127.0.0.1:38263
+1648828045185	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofilecbjzp5"
+*** You are running in headless mode.
+1648828045711	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilecbjzp5/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1648828047405	Marionette	INFO	Listening on port 41909
+1648828047512	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648828053015	geckodriver	INFO	Listening on 127.0.0.1:58511
+1648828053021	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofilestgVik"
+*** You are running in headless mode.
+1648828053562	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilestgVik/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1648828055043	Marionette	INFO	Listening on port 41251
+1648828055154	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648828064269	geckodriver	INFO	Listening on 127.0.0.1:42859
+1648828064287	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofileGgfKnd"
+*** You are running in headless mode.
+1648828064778	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileGgfKnd/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1648828066531	Marionette	INFO	Listening on port 36087
+1648828066641	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648828072579	geckodriver	INFO	Listening on 127.0.0.1:49949
+1648828072584	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofileZT15NS"
+*** You are running in headless mode.
+1648828073098	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileZT15NS/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1648828074861	Marionette	INFO	Listening on port 45641
+1648828074928	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648828169490	geckodriver	INFO	Listening on 127.0.0.1:57237
+1648828170499	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofilelVdh4Y"
+*** You are running in headless mode.
+1648828171050	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilelVdh4Y/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1648828172746	Marionette	INFO	Listening on port 45293
+1648828172838	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648828177218	geckodriver	INFO	Listening on 127.0.0.1:36761
+1648828177226	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofileMtESLC"
+*** You are running in headless mode.
+1648828177767	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileMtESLC/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1648828179552	Marionette	INFO	Listening on port 46693
+1648828179652	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648828185089	geckodriver	INFO	Listening on 127.0.0.1:36577
+1648828185094	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofilexBlmPF"
+*** You are running in headless mode.
+1648828185626	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilexBlmPF/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1648828187208	Marionette	INFO	Listening on port 38919
+1648828187366	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648828192813	geckodriver	INFO	Listening on 127.0.0.1:42707
+1648828193820	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofiles7DReH"
+*** You are running in headless mode.
+1648828194344	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofiles7DReH/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1648828196127	Marionette	INFO	Listening on port 40677
+1648828196251	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648828201515	geckodriver	INFO	Listening on 127.0.0.1:55395
+1648828201521	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofile1mHZxc"
+*** You are running in headless mode.
+1648828202051	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile1mHZxc/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1648828203811	Marionette	INFO	Listening on port 40585
+1648828203896	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648828298117	geckodriver	INFO	Listening on 127.0.0.1:54843
+1648828299126	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofileP4qPKC"
+*** You are running in headless mode.
+1648828299669	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileP4qPKC/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1648828301093	Marionette	INFO	Listening on port 45603
+1648828301164	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648828306311	geckodriver	INFO	Listening on 127.0.0.1:50055
+1648828306316	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofilew2wJbb"
+*** You are running in headless mode.
+1648828306805	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilew2wJbb/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1648828308259	Marionette	INFO	Listening on port 37269
+1648828308368	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648828312945	geckodriver	INFO	Listening on 127.0.0.1:46991
+1648828312951	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofileEj4Rwy"
+*** You are running in headless mode.
+1648828313475	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileEj4Rwy/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1648828315313	Marionette	INFO	Listening on port 37931
+1648828315375	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648828319616	geckodriver	INFO	Listening on 127.0.0.1:41639
+1648828319621	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofilenBJJdy"
+*** You are running in headless mode.
+1648828320201	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilenBJJdy/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1648828321920	Marionette	INFO	Listening on port 38363
+1648828321948	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648828327609	geckodriver	INFO	Listening on 127.0.0.1:53127
+1648828327614	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofileohsMpr"
+*** You are running in headless mode.
+1648828328136	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileohsMpr/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1648828329992	Marionette	INFO	Listening on port 44329
+1648828330072	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648828336596	geckodriver	INFO	Listening on 127.0.0.1:47905
+1648828337601	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofileNhHNwL"
+*** You are running in headless mode.
+1648828338149	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileNhHNwL/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1648828339807	Marionette	INFO	Listening on port 42807
+1648828339933	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648828434145	geckodriver	INFO	Listening on 127.0.0.1:56387
+1648828435152	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofileoajuUF"
+*** You are running in headless mode.
+1648828435719	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileoajuUF/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1648828437466	Marionette	INFO	Listening on port 38881
+1648828437579	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648828622045	geckodriver	INFO	Listening on 127.0.0.1:35169
+1648828623057	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofileB7EYIG"
+*** You are running in headless mode.
+1648828623823	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileB7EYIG/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1648828625554	Marionette	INFO	Listening on port 34767
+1648828625615	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648828630307	geckodriver	INFO	Listening on 127.0.0.1:43595
+1648828630313	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofiletflMjR"
+*** You are running in headless mode.
+1648828630812	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofiletflMjR/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1648828632598	Marionette	INFO	Listening on port 45135
+1648828632675	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648828638638	geckodriver	INFO	Listening on 127.0.0.1:41567
+1648828638645	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofileAYKYHw"
+*** You are running in headless mode.
+1648828639207	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileAYKYHw/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1648828641054	Marionette	INFO	Listening on port 43237
+1648828641228	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648828646655	geckodriver	INFO	Listening on 127.0.0.1:44479
+1648828647665	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofile2xD22e"
+*** You are running in headless mode.
+1648828648279	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile2xD22e/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1648828650590	Marionette	INFO	Listening on port 39459
+1648828650755	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648828656562	geckodriver	INFO	Listening on 127.0.0.1:39695
+1648828657575	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofile2Me4iJ"
+*** You are running in headless mode.
+1648828659314	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile2Me4iJ/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: Region.jsm: "Error fetching region" (new AbortError("The operation was aborted. ", (void 0), 770))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+1648828675796	Marionette	INFO	Listening on port 35607
+1648828675950	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648828680374	geckodriver	INFO	Listening on 127.0.0.1:50609
+1648828681386	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofileNglPWs"
+*** You are running in headless mode.
+1648828682623	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileNglPWs/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: PushServiceWebSocket: 
+  _beginWSSetup: Not in shutdown state! Current state
+  2
+console.error: PushServiceWebSocket: 
+  _beginWSSetup: Not in shutdown state! Current state
+  2
+
+###!!! [Parent][PContentParent] Error: RunMessage(msgname=PContent::Msg_PExtensionsConstructor) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: RunMessage(msgname=PContent::Msg_PExtensionsConstructor) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: RunMessage(msgname=PContent::Msg_InitBackground) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+1648828771005	Marionette	INFO	Listening on port 37449
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+WARNING: At least one completion condition is taking too long to complete. Conditions: [{"name":"ContentParent: id=7f686c9b5b00","state":{"remoteTypePrefix":"prealloc"},"filename":"/build/firefox-CnGjmG/firefox-98.0.1+build2/dom/ipc/ContentParent.cpp","lineNumber":3509,"stack":["resource://gre/modules/nsAsyncShutdown.jsm:addBlocker:162"]},{"name":"ContentParent: id=7f686c9b6000","state":{"remoteTypePrefix":"prealloc"},"filename":"/build/firefox-CnGjmG/firefox-98.0.1+build2/dom/ipc/ContentParent.cpp","lineNumber":3509,"stack":["resource://gre/modules/nsAsyncShutdown.jsm:addBlocker:162"]}] Barrier: profile-before-change
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+1648828801994	geckodriver	INFO	Listening on 127.0.0.1:34555
+1648828802008	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofileCZ1bwZ"
+*** You are running in headless mode.
+1648828805289	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileCZ1bwZ/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1648828936028	geckodriver	INFO	Listening on 127.0.0.1:56597
+1648828937107	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofileG9jJoR"
+*** You are running in headless mode.
+1648828939436	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: timeout
+1648828947392	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileG9jJoR/search.json.mozlz4", (void 0)))
+Exiting due to channel error.
+Exiting due to channel error.
+1648829070369	geckodriver	INFO	Listening on 127.0.0.1:53405
+1648829071385	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofileq7keJ6"
+*** You are running in headless mode.
+1648829075476	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileq7keJ6/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+Exiting due to channel error.
+Exiting due to channel error.
+1648829202845	geckodriver	INFO	Listening on 127.0.0.1:41823
+1648829203906	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofilebH5md5"
+*** You are running in headless mode.
+1648829208003	Marionette	INFO	Marionette enabled
+Exiting due to channel error.
+1648829349840	geckodriver	INFO	Listening on 127.0.0.1:45841
+1648829352203	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofileU1uDkO"
+
+###!!! [Child][PContentChild] Error: SendBuildIDsMatchMessage(msgname=BUILD_IDS_MATCH_MESSAGE) Channel error: cannot send/recv
+
+*** You are running in headless mode.
+1648829361663	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileU1uDkO/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1648829368838	Marionette	INFO	Listening on port 45937
+1648829368989	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648829466417	geckodriver	INFO	Listening on 127.0.0.1:45007
+1648829467426	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofileHwj30s"
+*** You are running in headless mode.
+1648829468481	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileHwj30s/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1648829472793	Marionette	INFO	Listening on port 43061
+1648829473337	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648829479387	geckodriver	INFO	Listening on 127.0.0.1:42317
+1648829479397	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofileFd5JrM"
+*** You are running in headless mode.
+1648829481467	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileFd5JrM/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1648829497020	Marionette	INFO	Listening on port 39901
+1648829497156	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648829506634	geckodriver	INFO	Listening on 127.0.0.1:33305
+1648829507644	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofilecwkRaT"
+*** You are running in headless mode.
+1648829509596	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilecwkRaT/search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+Exiting due to channel error.
+Exiting due to channel error.
+1648829639694	geckodriver	INFO	Listening on 127.0.0.1:37509
+1648829640514	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofileyyItE3"
+*** You are running in headless mode.
+1648829662644	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1648829947242	Marionette	INFO	Stopped listening on port 39901
+1648829949064	Marionette	INFO	Stopped listening on port 35607
+1648829950396	Marionette	INFO	Stopped listening on port 43237
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_GraphicsError) Channel error: cannot send/recv
+
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_GraphicsError) Channel error: cannot send/recv
+
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.

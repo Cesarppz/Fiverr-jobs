@@ -1,0 +1,55 @@
+1648830733637	geckodriver	INFO	Listening on 127.0.0.1:50401
+1648830734650	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofileyT0Gm0"
+*** You are running in headless mode.
+1648830735090	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileyT0Gm0/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1648830736429	Marionette	INFO	Listening on port 36273
+1648830736488	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648830744544	geckodriver	INFO	Listening on 127.0.0.1:45927
+1648830744551	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofilej7ngc5"
+*** You are running in headless mode.
+1648830744938	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilej7ngc5/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1648830746047	Marionette	INFO	Listening on port 35065
+1648830746069	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648830753709	geckodriver	INFO	Listening on 127.0.0.1:38781
+1648830753714	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofilepyzssD"
+*** You are running in headless mode.
+1648830754101	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilepyzssD/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1648830755179	Marionette	INFO	Listening on port 40589
+1648830755230	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1648831196652	geckodriver	INFO	Listening on 127.0.0.1:53241
+1648831196659	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--private" "--no-sandbox" "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofilePpyk6P"
+*** You are running in headless mode.
+1648831197077	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilePpyk6P/search.json.mozlz4", (void 0)))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1648831198143	Marionette	INFO	Listening on port 35759
+1648831198178	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648831206268	Marionette	INFO	Stopped listening on port 35759
