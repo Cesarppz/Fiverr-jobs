@@ -6,7 +6,6 @@ import re
 import datetime as dt
 import logging
 
-from playwright.sync_api import sync_playwright
 from scrapy.crawler import CrawlerProcess
 from datetime import datetime
 
@@ -115,16 +114,4 @@ class Webscrape(scrapy.Spider):
             'Nombre de la Página':'Gemidos TV'
             }
 
-    def extact_email(self,xpath,url):
-        with sync_playwright() as p:
-            browser = p.chromium.launch()
-            
-            page = browser.new_page()
-            page.goto(url)
-            page.wait_for_timeout(3000)
-            page.mouse.wheel(0,4000)
-            email = page.query_selector(xpath).inner_text()
-
-            browser.close()
-            return email
 

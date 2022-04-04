@@ -6,7 +6,6 @@ import re
 import datetime as dt
 import logging
 
-from playwright.sync_api import sync_playwright
 from scrapy.crawler import CrawlerProcess
 from datetime import datetime
 
@@ -56,7 +55,7 @@ class Webscrape(scrapy.Spider):
         link = kwargs['link']
 
         
-        title = response.xpath('//h1//text()').get()
+        title = response.xpath('//h1//text()').get().capitalize()
         
         geo_zone = response.xpath('//a[@class="btn btn-red btn-sm m-1 rounded-pill"]//text()').get().strip()
         #Categoria

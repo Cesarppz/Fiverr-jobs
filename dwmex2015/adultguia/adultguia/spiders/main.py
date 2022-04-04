@@ -128,7 +128,7 @@ class Webscrape(scrapy.Spider):
         options.add_argument('user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0')
         options.add_argument('--headless')
         #options.add_argument("--headless")
-        driver = webdriver.Firefox(executable_path='/home/cesar/Documents/job/web_scraping/javier/agenda/driver/geckodriver', options=options)
+        driver = webdriver.Firefox(executable_path='../drivers/geckodriver.exe', options=options)
 
         #Process
         driver.get(url)
