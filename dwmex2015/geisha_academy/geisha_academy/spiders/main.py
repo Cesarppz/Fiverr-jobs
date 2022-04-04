@@ -6,7 +6,7 @@ import re
 import datetime as dt
 import logging
 
-from playwright.sync_api import sync_playwright
+from selenium import webdriver
 from scrapy.crawler import CrawlerProcess
 from datetime import datetime
 
@@ -104,15 +104,16 @@ class Webscrape(scrapy.Spider):
             }
 
     def extact_email(self,xpath,url):
-        with sync_playwright() as p:
-            browser = p.chromium.launch()
-            
-            page = browser.new_page()
-            page.goto(url)
-            page.wait_for_timeout(3000)
-            page.mouse.wheel(0,4000)
-            email = page.query_selector(xpath).inner_text()
+        options = webdriver.FirefoxOptions()
+        options.add_argument('--private')
+        options.add_argument('--no-sandbox')
+        options.add_argument('user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0')
+        #options.add_argument("--headless")
+        driver = webdriver.Firefox(executable_path='../driver/geckodriver', options=options)
+        profile = webdriver.FirefoxProfile()
+        profile.set_preference("general.useragent.override", "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:98.0) Gecko/20100101 Firefox/98.0")
 
-            browser.close()
-            return email
-
+        #processing
+        driver.get(url)
+        driver.find_element_by_xpath(xpath).text
+        driver.close()
