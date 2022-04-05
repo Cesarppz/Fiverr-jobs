@@ -35,7 +35,7 @@ def move_and_remove(name, category, geo_zone):
     logger.info(f'Scraping {name} ...')
     if category != None and geo_zone == None:
         try:
-            print('Category',category)
+            # print('Category',category)
             subprocess.run(['scrapy','crawl',f'{name}','-a',f'category={category}','--loglevel','INFO'],cwd=path, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
             logger.info(f'Scraping {name}')
             try:
@@ -180,5 +180,5 @@ if __name__ == '__main__':
     parser.add_argument('--category','-c',help='Introduzca la categoria que quiere buscar',nargs='?', action='append')
     parser.add_argument('--geo_zone','-g',help='Introduzca la zona geografica que quiere buscar', nargs='?', action='append')
     args = parser.parse_args()
-    print(args.run)
+    #print(args.run)
     main(args)
