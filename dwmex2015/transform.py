@@ -169,7 +169,7 @@ def main(args):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--file','-f',help='Introduzca la ruta del archivo que quiere convertir a csv',nargs='?',action='append')
-    parser.add_argument('--run','-r',help='introduza el nomnre o nombres de los programas que quiere correr',nargs='?', action='append')
+    parser.add_argument('--run','-r',help='introduza el nomnre o nombres de los programas que quiere correr',nargs='?', action='append',choices=['escorts_mexico', 'geisha_academy', 'gemidos', 'selfiescorts', 'la_boutique', 'putas_vip_mexico',  'seductora', 'dessires', 'scorts_natural', 'mileroticos', 'mil_avisos', 'chicas_y_escorts', 'top_models_mx', 'evas', 'zonadivas' , 'mundosexanuncio', 'bombachitas_regias', 'skokka', 'divas_mexico', 'angeles_mex', 'encuentro_chicas', 'atlas_escorts', 'sustitutas', 'loguo_vip', 'sensualonas', 'adultguia'])
     parser.add_argument('--category','-c',help='Introduzca la categoria que quiere buscar',nargs='?', action='append')
     parser.add_argument('--geo_zone','-g',help='Introduzca la zona geografica que quiere buscar', nargs='?', action='append')
     args = parser.parse_args()
