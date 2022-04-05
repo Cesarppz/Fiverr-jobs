@@ -60,7 +60,7 @@ class Webscrape(scrapy.Spider):
 
         links = set(response.xpath('//a[@class="w-grid-item-anchor"]/@href').getall())
         for idx, link in enumerate(links):
-            logger.info(f'Category {idx} / {len(links)}')
+            logger.info(f'Links {idx} / {len(links)}')
             yield response.follow(link, callback=self.new_parse,cb_kwargs={'link':link})
             
  

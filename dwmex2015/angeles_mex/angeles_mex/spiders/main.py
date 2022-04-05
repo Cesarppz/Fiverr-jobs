@@ -15,7 +15,7 @@ dia = datetime.now().day
 year = datetime.now().year
 
 pattern_geozone = re.compile(r'(Localización|Ciudad): (.*)')
-main_url = 'https://gemidos.tv'
+main_url = 'https://angelesx.com'
 cop_pattern = re.compile(r'.*(COP|USD).*')
 
 
@@ -27,22 +27,49 @@ class Webscrape(scrapy.Spider):
                         'FEED_FORMAT':'csv',
                         'FEED_EXPORT_ENCODING':'utf-8'}
 
-    start_urls = [
-        'https://angelesx.com/escorts/AGUASCALIENTES',
-        'https://angelesx.com/escorts/CANCUN',
-        'https://angelesx.com/escorts/CDMX',
-        'https://angelesx.com/escorts/CORDOBA',
-        'https://angelesx.com/escorts/VERACRUZ',
-        'https://angelesx.com/escorts/ZACATECAS'
-    ]
 
+    def start_requests(self):
+        input_category = getattr(self,'category',None)
+        # print('Input c',input_category)
+        if input_category is None:
+            input_category = 'todas'
+        else:
+            input_category = '-'.join(input_category.split()).upper()
+        
+        # if input_category == 'escorts-y-putas':
+        #     input_category = 'escorts'
+
+        input_geozone = getattr(self,'geo_zone',None)
+        if input_geozone is None:
+            input_geozone = 'todas'
+        else:
+            input_geozone = '-'.join(input_geozone.split()).upper()
+
+        if input_category == 'todas' and input_geozone == 'todas':
+            url = main_url
+        elif input_category == 'todas' and input_geozone != 'todas':
+            url = f'{main_url}/escorts/{input_geozone}/'
+        elif input_geozone == 'todas' and input_category != 'todas':
+            url = f'{main_url}/escorts/{input_category}/'
+        else:
+            url = f'{main_url}/escorts/{input_category}'
+        
+        yield scrapy.Request(url, callback=self.parse)
 
     def parse(self, response):
-       links = set(response.xpath('//div[@class="card"]/a/@href').getall())
-       for idx, link in enumerate(links):
-           logger.info(f'Links {idx} / {len(links)}')
-           yield response.follow(link, callback=self.new_parse,cb_kwargs={'link':link})
-       
+        url = response.request.url
+        if url == main_url:
+            links = set(response.xpath('//div[@class="text-center"]/a/@href').getall())
+            for idx, link in enumerate(links):
+                logger.info(f'Category {idx} / {len(links)}')
+                yield response.follow(link, callback=self.parse)
+
+        else:
+            links = set(response.xpath('//div[@class="card"]/a/@href').getall())
+           # links = set(response.xpath('//article/figure/a/@href').getall())
+            for idx, link in enumerate(links):
+                logger.info(f'Links {idx} / {len(links)}')
+                yield response.follow(link, callback=self.new_parse,cb_kwargs={'link':link})
  
         
         # next_page = response.xpath('//span[@class="next"]/a/@href').get()

@@ -15,7 +15,7 @@ dia = datetime.now().day
 year = datetime.now().year
 
 pattern = re.compile(r'https://evas.mx/ciudad/(.*)/')
-#main_url = 'https://gemidos.tv'
+main_url = 'https://mx.atlasescorts.com'
 cop_pattern = re.compile(r'.*(COP|USD).*')
 
 
@@ -27,11 +27,35 @@ class Webscrape(scrapy.Spider):
                         'FEED_FORMAT':'csv',
                         'FEED_EXPORT_ENCODING':'utf-8'}
 
-    start_urls = [
-            'https://mx.atlasescorts.com/search',
-            'https://mx.atlasescorts.com/category/shemale-escorts',
-            'https://mx.atlasescorts.com/category/escorts'
-    ]
+
+    def start_requests(self):
+        input_category = getattr(self,'category',None)
+        # print('Input c',input_category)
+        if input_category is None:
+            input_category = 'todas'
+        else:
+            input_category = '-'.join(input_category.split()).lower()
+        
+        # if input_category == 'escorts-y-putas':
+        #     input_category = 'escorts'
+
+        input_geozone = getattr(self,'geo_zone',None)
+        if input_geozone is None:
+            input_geozone = 'todas'
+        else:
+            input_geozone = '-'.join(input_geozone.split()).lower()
+
+        if input_category == 'todas' and input_geozone == 'todas':
+            url = 'https://mx.atlasescorts.com/search'
+        elif input_category == 'todas' and input_geozone != 'todas':
+            url = f'{main_url}/search?q=&location={input_geozone}&c=1&l=3521081&r='
+        elif input_geozone == 'todas' and input_category != 'todas':
+            url = f'{main_url}/category/{input_category}/'
+        else:
+            logger.error('Ingresa categoria o geo_zone, no ambas')
+            url = f'{main_url}/category/{input_category}/'
+        
+        yield scrapy.Request(url, callback=self.parse)
 
 
     def parse(self, response):
@@ -53,6 +77,7 @@ class Webscrape(scrapy.Spider):
         link = kwargs['link']
         
         title = response.xpath('//h1/text()').get().strip()
+
         
         geo_zone = response.xpath('//div[@class="additional x1"][text()=" City"]/following-sibling::div[@class="additional x2"]/a/text()').get().strip()
         #Categoria

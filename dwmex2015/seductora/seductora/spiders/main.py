@@ -15,9 +15,17 @@ dia = datetime.now().day
 year = datetime.now().year
 
 pattern = re.compile(r'https://evas.mx/ciudad/(.*)/')
-main_url = 'https://gemidos.tv'
+main_url = 'https://seductoras.mx/'
 cop_pattern = re.compile(r'.*(COP|USD).*')
-
+geo_dict = {
+        'puebla':'https://puebla.seductoras.mx/',
+        'cuernavaca':'https://cuernavaca.seductoras.mx/',
+        'cdmx':'https://cdmx.seductoras.mx/',
+        'queretaro':'https://seductoras.mx/escorts/queretaro/queretaro/',
+        'baja-california':'https://seductoras.mx/escorts/baja-california/tijuana/',
+        'guanajuato':'https://seductoras.mx/escorts/guanajuato/leon/',
+        'sinaloa':'https://seductoras.mx/escorts/sinaloa/culiacan/'
+    }
 
 class Webscrape(scrapy.Spider):
     name = 'seductora'
@@ -27,15 +35,35 @@ class Webscrape(scrapy.Spider):
                         'FEED_FORMAT':'csv',
                         'FEED_EXPORT_ENCODING':'utf-8'}
 
-    start_urls = [
-        'https://puebla.seductoras.mx/',
-        'https://cuernavaca.seductoras.mx/',
-        'https://cdmx.seductoras.mx/',
-        'https://seductoras.mx/escorts/queretaro/queretaro/',
-        'https://seductoras.mx/escorts/baja-california/tijuana/',
-        'https://seductoras.mx/escorts/guanajuato/leon/',
-        'https://seductoras.mx/escorts/sinaloa/culiacan/'
-    ]
+    
+
+    def start_requests(self):
+        input_category = getattr(self,'category',None)
+        # print('Input c',input_category)
+        if input_category is None:
+            input_category = 'todas'
+        else:
+            input_category = '-'.join(input_category.split()).lower()
+        
+        # if input_category == 'escorts-y-putas':
+        #     input_category = 'escorts'
+
+        input_geozone = getattr(self,'geo_zone',None)
+        if input_geozone is None:
+            input_geozone = 'todas'
+        else:
+            input_geozone = '-'.join(input_geozone.split()).lower()
+
+        if input_category == 'todas' and input_geozone == 'todas':
+            url = main_url
+        elif input_category == 'todas' and input_geozone != 'todas':
+            url = geo_dict[input_geozone]
+        elif input_geozone == 'todas' and input_category != 'todas':
+            url = geo_dict[input_category]
+        else:
+            url = geo_dict[input_category]
+        
+        yield scrapy.Request(url, callback=self.parse)
 
 
     def parse(self, response):

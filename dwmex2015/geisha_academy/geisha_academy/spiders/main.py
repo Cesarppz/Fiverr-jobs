@@ -28,8 +28,33 @@ class Webscrape(scrapy.Spider):
                         'FEED_FORMAT':'csv',
                         'FEED_EXPORT_ENCODING':'utf-8'}
 
-    start_urls = [ main_url ]
-   # allowed_domains = ['https://mx.mundosexanuncio.com/']
+    def start_requests(self):
+        input_category = getattr(self,'category',None)
+        # print('Input c',input_category)
+        if input_category is None:
+            input_category = 'todas'
+        else:
+            input_category = '-'.join(input_category.split()).lower()
+        
+        # if input_category == 'escorts-y-putas':
+        #     input_category = 'escorts'
+
+        input_geozone = getattr(self,'geo_zone',None)
+        if input_geozone is None:
+            input_geozone = 'todas'
+        else:
+            input_geozone = '-'.join(input_geozone.split()).lower()
+
+        if input_category == 'todas' and input_geozone == 'todas':
+            url = main_url
+        # elif input_category == 'todas' and input_geozone != 'todas':
+        #     url = f'{main_url}/{input_geozone}/'
+        # elif input_geozone == 'todas' and input_category != 'todas':
+        #     url = f'{main_url}/anuncios-eroticos/{input_category}/'
+        # else:
+        #     url = f'{main_url}/anuncios-eroticos/{input_category}/{input_geozone}/'
+        
+        yield scrapy.Request(url, callback=self.parse)
 
     def parse(self, response):
        links = set(response.xpath('//*[@id="attachment_1631"]/a/@href').getall())

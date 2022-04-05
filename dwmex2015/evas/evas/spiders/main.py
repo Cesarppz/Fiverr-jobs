@@ -15,7 +15,7 @@ dia = datetime.now().day
 year = datetime.now().year
 
 pattern = re.compile(r'https://evas.mx/ciudad/(.*)/')
-main_url = 'https://gemidos.tv'
+main_url = 'https://evas.mx'
 cop_pattern = re.compile(r'.*(COP|USD).*')
 
 
@@ -27,28 +27,41 @@ class Webscrape(scrapy.Spider):
                         'FEED_FORMAT':'csv',
                         'FEED_EXPORT_ENCODING':'utf-8'}
 
-    start_urls = [
-        'https://evas.mx/ciudad/escorts-certificadas-cdmx/',
-        'https://evas.mx/ciudad/putas-iniciandose-nuevas-cdmx-df/',
-        'https://evas.mx/ciudad/escorts-famosas-vip-en-mexico-y-cdmx/',
-        'https://evas.mx/ciudad/ranking-premium/',
-        'https://evas.mx/ciudad/escorts-con-promos/',
-        'https://evas.mx/ciudad/escorts-jovenes-chavitas-teen/',
-        'https://evas.mx/ciudad/escorts-maduras-milf-en-cdmx-df/',
-        'https://evas.mx/ciudad/sexo-mananero-en-cdmx/',
-        'https://evas.mx/ciudad/bdsm-escorts-mexico-sado-sumision/',
-        'https://evas.mx/ciudad/escorts-con-videos-xxx-en-cdmx/',
-        'https://evas.mx/ciudad/chicas-vip/',
-        'https://evas.mx/ciudad/chicas-de-lujo/',
-        'https://evas.mx/ciudad/chicas-independientes/',
-        'https://evas.mx/ciudad/escorts-chicas-trans-trasvestis-en-cdmx/',
-        'https://evas.mx/ciudad/escorts-que-aceptan-tarjeta-bancaria/'
-    ]
+    def start_requests(self):
+        input_category = getattr(self,'category',None)
+        # print('Input c',input_category)
+        if input_category is None:
+            input_category = 'todas'
+        else:
+            input_category = '-'.join(input_category.split()).lower()
+        
+        # if input_category == 'escorts-y-putas':
+        #     input_category = 'escorts'
 
+        input_geozone = getattr(self,'geo_zone',None)
+        if input_geozone is None:
+            input_geozone = 'todas'
+        else:
+            input_geozone = '-'.join(input_geozone.split()).lower()
+
+        if input_category == 'todas' and input_geozone == 'todas':
+            url = main_url
+        elif input_category == 'todas' and input_geozone != 'todas':
+            url = f'{main_url}/cuidad/{input_geozone}/'
+        elif input_geozone == 'todas' and input_category != 'todas':
+            url = f'{main_url}/ciudad/{input_category}/'
+        else:
+            url = f'{main_url}/ciudad/{input_category}/'
+        
+        yield scrapy.Request(url, callback=self.parse)
 
     def parse(self, response):
-        category = re.match(pattern,response.request.url).group(1)
-        category =  ' '.join(category.split('-')) 
+        actual_url = response.request.url
+        if actual_url == main_url:
+            category = 'No category'   
+        else:
+            category = re.match(pattern,actual_url).group(1)
+            category =  ' '.join(category.split('-')) 
 
         links = set(response.xpath('//div[@class="row"]/div[@class="escort-item col-12 col-sm-12 col-md-4 col-lg-2"]/a/@href').getall())
         for idx, link in enumerate(links):
@@ -70,6 +83,8 @@ class Webscrape(scrapy.Spider):
         title = response.xpath('//h2[@class="single-escort-name"]/text()').get().split('-')[0]
         
         geo_zone = response.xpath('//h2[@class="single-escort-name"]/text()').get().split('-')[1]
+        if category == 'No category':
+            category = geo_zone
         #Categoria
         # category = re.match(pattern,response.request.url).group(1)
         # category =  ' '.join(category.split('-'))

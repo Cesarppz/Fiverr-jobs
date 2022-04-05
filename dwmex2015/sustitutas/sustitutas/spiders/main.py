@@ -68,7 +68,7 @@ class Webscrape(scrapy.Spider):
             links = set(response.xpath('//h2/a/@href').getall())
            # links = set(response.xpath('//article/figure/a/@href').getall())
             for idx, link in enumerate(links):
-                logger.info(f'Category {idx} / {len(links)}')
+                logger.info(f'Links {idx} / {len(links)}')
                 yield response.follow(link, callback=self.s_parse,cb_kwargs={'link':link})
             
  

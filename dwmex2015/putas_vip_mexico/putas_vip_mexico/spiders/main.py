@@ -14,7 +14,7 @@ mes = datetime.now().month
 dia = datetime.now().day
 year = datetime.now().year
 
-pattern = re.compile(r'https://putasvipmexico.com/(.*)/(.*)')
+pattern = re.compile(r'https://putasvipmexico.com/(.*)/(.*)(\?page=.)?')
 main_url = 'https://putasvipmexico.com'
 # cop_pattern = re.compile(r'.*(COP|USD).*')
 
@@ -52,14 +52,14 @@ class Webscrape(scrapy.Spider):
         else:
             category_input = 'all'
 
-        geo_zone_input = getattr(self, 'category', None)
+        geo_zone_input = getattr(self, 'geo_zone', None)
         if geo_zone_input:
             geo_zone_input = category_input.lower() 
 
         else:
             geo_zone_input = 'all'
 
-        if category_input == category and geo_zone == geo_zone_input:  #Modificar para cambiar categorias
+        if category_input == category.lower() and geo_zone.lower() == geo_zone_input:  #Modificar para cambiar categorias
             links = set(response.xpath('//div[@class="row"]//div[@class="in-list-ad-title-ad"]/a/@href').getall())
             for idx, link in enumerate(links):
                 logger.info(f'Links {idx} / {len(links)}')
@@ -68,7 +68,7 @@ class Webscrape(scrapy.Spider):
             next_page = response.xpath('//a[@rel="next"]/@href').get()
             if next_page:
                 #next_page = '{}{}'.format(main_url,next_page)
-                yield response.follow(next_page, callback= self.parse)
+                yield response.follow(next_page, callback= self.f_parse)
         
         
         elif category_input == 'all' and geo_zone_input == 'all':
@@ -80,9 +80,9 @@ class Webscrape(scrapy.Spider):
             next_page = response.xpath('//a[@rel="next"]/@href').get()
             if next_page:
                 #next_page = '{}{}'.format(main_url,next_page)
-                yield response.follow(next_page, callback= self.parse)
+                yield response.follow(next_page, callback= self.f_parse)
 
-        elif category_input == 'all' and geo_zone == geo_zone_input:
+        elif category_input == 'all' and geo_zone.lower() == geo_zone_input:
             links = set(response.xpath('//div[@class="row"]//div[@class="in-list-ad-title-ad"]/a/@href').getall())
             for idx, link in enumerate(links):
                 logger.info(f'Links {idx} / {len(links)}')
@@ -91,9 +91,9 @@ class Webscrape(scrapy.Spider):
             next_page = response.xpath('//a[@rel="next"]/@href').get()
             if next_page:
                 #next_page = '{}{}'.format(main_url,next_page)
-                yield response.follow(next_page, callback= self.parse)
+                yield response.follow(next_page, callback= self.f_parse)
 
-        elif geo_zone_input == 'all' and category_input == category:
+        elif geo_zone_input == 'all' and category_input == category.lower():
             links = set(response.xpath('//div[@class="row"]//div[@class="in-list-ad-title-ad"]/a/@href').getall())
             for idx, link in enumerate(links):
                 logger.info(f'Links {idx} / {len(links)}')
@@ -102,7 +102,7 @@ class Webscrape(scrapy.Spider):
             next_page = response.xpath('//a[@rel="next"]/@href').get()
             if next_page:
                 #next_page = '{}{}'.format(main_url,next_page)
-                yield response.follow(next_page, callback= self.parse)
+                yield response.follow(next_page, callback= self.f_parse)
 
         else: 
             pass
