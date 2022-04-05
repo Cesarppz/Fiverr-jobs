@@ -1,12 +1,15 @@
 import pandas as pd
 import argparse
-from datetime import datetime
+from datetime import date, datetime
 import logging
 import subprocess
 
 # Fecha de hoy
 dia = datetime.now().day
 mes = datetime.now().month
+hour = datetime.now().hour
+minute = datetime.now().minute
+sec = datetime.now().second
 # Logger
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                     datefmt='%Y-%m-%d %H:%M')
@@ -15,7 +18,7 @@ logger = logging.getLogger('Scarpe-app')
 def transform_csv_to_excel(file, list=False):
     if list == False:
         df = pd.read_csv(file)
-        df.to_excel(f'results_files/results_{dia}_of_{mes}.xlsx',index=False)
+        df.to_excel(f'results_files/results_{dia}_of_{mes}_{hour}{minute}{sec}.xlsx',index=False)
         logger.info('Datos transformados')
     else:
         box_data_frames = []
@@ -23,14 +26,16 @@ def transform_csv_to_excel(file, list=False):
             box_data_frames.append(pd.read_csv(p))
 
         df = pd.concat(box_data_frames,axis='columns')
-        df.to_excel(f'results_files/results_{dia}_of_{mes}.xlsx',index=False)
+        df.to_excel(f'results_files/results_{dia}_of_{mes}_{hour}{minute}{sec}.xlsx',index=False)
         logger.info('Datos transformados')
 
 
 def move_and_remove(name, category, geo_zone):
     path = f'./{name}'
+    logger.info(f'Scraping {name} ...')
     if category != None and geo_zone == None:
         try:
+            print('Category',category)
             subprocess.run(['scrapy','crawl',f'{name}','-a',f'category={category}','--loglevel','INFO'],cwd=path, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
             logger.info(f'Scraping {name}')
             try:
@@ -83,6 +88,7 @@ def run_multiple_program(names,category,geo_zone,one_category=False,one_geo_zone
     if category == None and geo_zone == None:
         box_files = []                
         for name in names:
+           # print('Names',name)
             file = move_and_remove(name, category, geo_zone)
             box_files.append(file)
         transform_csv_to_excel(box_files,list=True)
@@ -147,7 +153,8 @@ def main(args):
             transform_csv_to_excel(args.file)
 
     elif args.run:
-        if len(args.run) > 2:
+        if len(args.run) >= 2:
+
             run_multiple_program(args.run, args.category,args.geo_zone)
 
         else:
@@ -161,7 +168,7 @@ def main(args):
                 geo_zone = None
 
             file = move_and_remove(args.run[0], category, geo_zone)
-            print(f'file: {file}')
+            #print(f'file: {file}')
             transform_csv_to_excel(file)
 
 
@@ -173,4 +180,5 @@ if __name__ == '__main__':
     parser.add_argument('--category','-c',help='Introduzca la categoria que quiere buscar',nargs='?', action='append')
     parser.add_argument('--geo_zone','-g',help='Introduzca la zona geografica que quiere buscar', nargs='?', action='append')
     args = parser.parse_args()
+    print(args.run)
     main(args)
