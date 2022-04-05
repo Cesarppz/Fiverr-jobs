@@ -25,7 +25,7 @@ def transform_csv_to_excel(file, list=False):
         for p in file:
             box_data_frames.append(pd.read_csv(p))
 
-        df = pd.concat(box_data_frames,axis='columns')
+        df = pd.concat(box_data_frames,axis='rows')
         df.to_excel(f'results_files/results_{dia}_of_{mes}_{hour}{minute}{sec}.xlsx',index=False)
         logger.info('Datos transformados')
 
