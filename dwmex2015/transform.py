@@ -97,6 +97,7 @@ def run_multiple_program(names,category,geo_zone,one_category=False,one_geo_zone
         if len(category) == len(names):  # Cada programa tiene su categoria
             box_files = []                
             for idx, name in enumerate(names):
+                print(category[idx])
                 file = move_and_remove(name, category[idx], geo_zone)
                 box_files.append(file)
             transform_csv_to_excel(box_files,list=True)
