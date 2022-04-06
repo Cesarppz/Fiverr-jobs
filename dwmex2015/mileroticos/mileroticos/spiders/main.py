@@ -6,7 +6,6 @@ import re
 import datetime as dt
 import logging
 import time
-from playwright.sync_api import sync_playwright
 from scrapy.crawler import CrawlerProcess
 from datetime import datetime
 from selenium import webdriver
@@ -69,7 +68,7 @@ class Webscrape(scrapy.Spider):
             links = self.click('//div[@class="list-unstyled anun-list no-grid"]//a',url)
            # links = set(response.xpath('//article/figure/a/@href').getall())
             for idx, link in enumerate(links):
-                logger.info(f'Category {idx} / {len(links)}')
+                logger.info(f'Links {idx} / {len(links)}')
                 yield response.follow(link, callback=self.new_parse,cb_kwargs={'link':link})
             
  
@@ -117,18 +116,6 @@ class Webscrape(scrapy.Spider):
             'Nombre de la Página':'Mileroticos'
             }
 
-    def extact_email(self,xpath,url):
-        with sync_playwright() as p:
-            browser = p.chromium.launch()
-            
-            page = browser.new_page()
-            page.goto(url)
-            page.wait_for_timeout(3000)
-            page.mouse.wheel(0,4000)
-            email = page.query_selector(xpath).inner_text()
-
-            browser.close()
-            return email
     def click(self,xpath,url):
         #Setting
         options = webdriver.FirefoxOptions()
@@ -137,7 +124,7 @@ class Webscrape(scrapy.Spider):
         options.add_argument('user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0')
         options.add_argument('--headless')
         #options.add_argument("--headless")
-        driver = webdriver.Firefox(executable_path='/home/cesar/Documents/job/web_scraping/javier/agenda/driver/geckodriver', options=options)
+        driver = webdriver.Firefox(executable_path='../drivers/geckodriver.exe', options=options)
 
         #Process
         driver.get(url)

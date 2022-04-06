@@ -6,7 +6,6 @@ import re
 import datetime as dt
 import logging
 
-from playwright.sync_api import sync_playwright
 from scrapy.crawler import CrawlerProcess
 from datetime import datetime
 
@@ -29,47 +28,38 @@ class Webscrape(scrapy.Spider):
                         'FEED_EXPORT_ENCODING':'utf-8'}
 
     def start_requests(self):
-        list_countries = ['/venezuela',
- '/uruguay',
- '/usa',
- '/united-arab-emirates',
- '/uk',
- '/republica-dominicana',
- '/peru',
- '/paraguay',
- '/panama',
- '/nicaragua',
- '/mexico',
- '/italy',
- '/ireland',
- '/india',
- '/honduras',
- '/guyane',
- '/france',
- '/espana',
- '/el-salvador',
- '/ecuador',
- '/costa-rica',
- '/colombia',
- '/chile',
- '/canada',
- '/brasil',
- '/bolivia',
- '/australia',
- '/argentina']
+        input_category = getattr(self,'category',None)
+        # print('Input c',input_category)
+        if input_category is None:
+            input_category = 'todas'
+        else:
+            input_category = '-'.join(input_category.split()).lower()
+        
+        # if input_category == 'escorts-y-putas':
+        #     input_category = 'escorts'
 
-        for i in list_countries:
-            link = '{}{}'.format(main_url,i)
-            print(link)
-            yield scrapy.Request(link, callback=self.parse)
+        input_geozone = getattr(self,'geo_zone',None)
+        if input_geozone is None:
+            input_geozone = 'todas'
+        else:
+            input_geozone = '-'.join(input_geozone.split()).lower()
+
+        if input_category == 'todas' and input_geozone == 'todas':
+            url = main_url
+        elif input_category == 'todas' and input_geozone != 'todas':
+            url = f'{main_url}/{input_geozone}/'
+        elif input_geozone == 'todas' and input_category != 'todas':
+            url = f'{main_url}/categoria-{input_category}/'
+        else:
+            url = f'{main_url}/{input_geozone}/{input_category}/'
+        
+        yield scrapy.Request(url, callback=self.parse)
 
     def parse(self, response):
        links = set(response.xpath('//a[@class="listing-link"]/@href').getall())
        for idx, link in enumerate(links):
-           logger.info(f'Category {idx} / {len(links)}')
+           logger.info(f'Links {idx} / {len(links)}')
            yield response.follow(link, callback=self.new_parse,cb_kwargs={'link':link})
-       
- 
         
         # next_page = response.xpath('//span[@class="next"]/a/@href').get()
         # if next_page:
@@ -115,16 +105,4 @@ class Webscrape(scrapy.Spider):
             'Nombre de la Página':'Gemidos TV'
             }
 
-    def extact_email(self,xpath,url):
-        with sync_playwright() as p:
-            browser = p.chromium.launch()
-            
-            page = browser.new_page()
-            page.goto(url)
-            page.wait_for_timeout(3000)
-            page.mouse.wheel(0,4000)
-            email = page.query_selector(xpath).inner_text()
-
-            browser.close()
-            return email
 

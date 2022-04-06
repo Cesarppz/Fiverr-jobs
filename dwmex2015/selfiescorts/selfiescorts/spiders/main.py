@@ -6,7 +6,6 @@ import re
 import datetime as dt
 import logging
 
-from playwright.sync_api import sync_playwright
 from scrapy.crawler import CrawlerProcess
 from datetime import datetime
 
@@ -16,7 +15,7 @@ dia = datetime.now().day
 year = datetime.now().year
 
 pattern = re.compile(r'https://selfiescorts.com/(.*)/.*')
-main_url = 'https://gemidos.tv'
+main_url = 'https://selfiescorts.com'
 cop_pattern = re.compile(r'.*(COP|USD).*')
 
 
@@ -29,7 +28,7 @@ class Webscrape(scrapy.Spider):
                         'FEED_EXPORT_ENCODING':'utf-8'}
 
     start_urls = [
-        'https://selfiescorts.com/ahora/?country=mexico',
+        '   /ahora/?country=mexico',
         'https://selfiescorts.com/maduras/?country=mexico',
         'https://selfiescorts.com/masajistas/?country=mexico',
         'https://selfiescorts.com/fantasias/?country=mexico',
@@ -39,6 +38,35 @@ class Webscrape(scrapy.Spider):
         'https://selfiescorts.com/mas-comentadas/?country=mexico',
         'https://selfiescorts.com/comparar/?country=mexico'
     ]
+
+    def start_requests(self):
+        input_category = getattr(self,'category',None)
+        # print('Input c',input_category)
+        if input_category is None:
+            input_category = 'todas'
+        else:
+            input_category = '-'.join(input_category.split()).lower()
+        
+        # if input_category == 'escorts-y-putas':
+        #     input_category = 'escorts'
+
+        input_geozone = getattr(self,'geo_zone',None)
+        if input_geozone is None:
+            input_geozone = 'todas'
+        else:
+            input_geozone = '-'.join(input_geozone.split()).lower()
+
+        if input_category == 'todas' and input_geozone == 'todas':
+            url = 'https://selfiescorts.com/mexico/'
+        elif input_category == 'todas' and input_geozone != 'todas':
+            url = f'{main_url}/{input_geozone}'
+        elif input_geozone == 'todas' and input_category != 'todas':
+            url = f'{main_url}/{input_category}/?country=mexico'
+        else:
+            url = f'{main_url}/{input_category}/?country={input_geozone}/'
+        
+        yield scrapy.Request(url, callback=self.parse)
+
 
 
     def parse(self, response):
@@ -108,17 +136,4 @@ class Webscrape(scrapy.Spider):
             'Url del Anuncio':link,
             'Nombre de la Página':'Selfiescorts'
             }
-
-    def extact_email(self,xpath,url):
-        with sync_playwright() as p:
-            browser = p.chromium.launch()
-            
-            page = browser.new_page()
-            page.goto(url)
-            page.wait_for_timeout(3000)
-            page.mouse.wheel(0,4000)
-            email = page.query_selector(xpath).inner_text()
-
-            browser.close()
-            return email
 

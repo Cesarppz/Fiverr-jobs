@@ -6,7 +6,6 @@ import re
 import datetime as dt
 import logging
 
-from playwright.sync_api import sync_playwright
 from scrapy.crawler import CrawlerProcess
 from datetime import datetime
 
@@ -59,7 +58,7 @@ class Webscrape(scrapy.Spider):
     def parse(self, response):
         links = set(response.xpath('//article/figure/a/@href').getall())
         for idx, link in enumerate(links):
-           logger.info(f'Category {idx} / {len(links)}')
+           logger.info(f'Links {idx} / {len(links)}')
            yield response.follow(link, callback=self.new_parse,cb_kwargs={'link':link})
        
  
@@ -104,19 +103,6 @@ class Webscrape(scrapy.Spider):
             'Url del Anuncio':link,
             'Nombre de la Página':'Chicas y Escorts'
             }
-
-    def extact_email(self,xpath,url):
-        with sync_playwright() as p:
-            browser = p.chromium.launch()
-            
-            page = browser.new_page()
-            page.goto(url)
-            page.wait_for_timeout(3000)
-            page.mouse.wheel(0,4000)
-            email = page.query_selector(xpath).inner_text()
-
-            browser.close()
-            return email
 
     def remove_spaces(self,x):
         return x.replace('  ',' ').replace('\r','').replace('\t','').replace('\xa0','').replace('\n','').strip()

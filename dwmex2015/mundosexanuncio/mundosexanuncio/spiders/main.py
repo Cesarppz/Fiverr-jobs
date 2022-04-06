@@ -28,32 +28,57 @@ class Webscrape(scrapy.Spider):
 
     start_urls = [ 'https://mx.mundosexanuncio.com/' ]
    # allowed_domains = ['https://mx.mundosexanuncio.com/']
+    def start_requests(self):
+        input_category = getattr(self,'category',None)
+        # print('Input c',input_category)
+        if input_category is None:
+            input_category = 'todas'
+        else:
+            input_category = '-'.join(input_category.split()).lower()
+        
+        # if input_category == 'escorts-y-putas':
+        #     input_category = 'escorts'
+
+        input_geozone = getattr(self,'geo_zone',None)
+        if input_geozone is None:
+            input_geozone = 'todas'
+        else:
+            input_geozone = '-'.join(input_geozone.split()).lower()
+
+        if input_category == 'todas' and input_geozone == 'todas':
+            url = main_url
+        elif input_category == 'todas' and input_geozone != 'todas':
+            url = f'{main_url}/{input_geozone}/'
+        elif input_geozone == 'todas' and input_category != 'todas':
+            url = f'{main_url}/contactos-eroticos-en-{input_category}/'
+        else:
+            url = f'{main_url}/{input_category}-en-{input_geozone}/'
+        
+        yield scrapy.Request(url, callback=self.parse)
+
 
     def parse(self, response):
-       links = response.xpath('//div[@class="navegacion br4pt clearfix"]/*[@id="categorias"]//a/@href').getall()
-       for idx, link in enumerate(links):
-           logger.info(f'Category {idx} / {len(links)}')
-           yield response.follow(link, callback=self.s_parse)
-       
+        url = response.request.url
+        if url == main_url:
+            links = set(response.xpath('//div[@class="navegacion br4pt clearfix"]/*[@id="categorias"]//a/@href').getall())
+            for idx, link in enumerate(links):
+                logger.info(f'Category {idx} / {len(links)}')
+                yield response.follow(link, callback=self.parse)
 
+        else:
+            links = set(response.xpath('//div[@class="item_desc_box"]/h2/a[@class="title"]/@href').getall())
+            for idx, link in enumerate(links):
+                logger.info(f'Links {idx} / {len(links)}')
+                yield response.follow(link, callback=self.new_parse,cb_kwargs={'link':link})
 
-    def s_parse(self, response):
-        links = set( response.xpath('//div[@class="item_desc_box"]/h2/a[@class="title"]/@href').getall())
-        for idx, link in enumerate(links):
-            if link:
-                logger.info(f'Link {idx+1}/{len(links)}')
-                yield response.follow(link, callback=self.new_parse, cb_kwargs={'link':link, 'idx':idx+1,'len':len(links)})
-        
         next_page = response.xpath('//span[@class="next"]/a/@href').get()
         if next_page:
             next_page = '{}{}'.format(main_url,next_page)
-            yield response.follow(next_page, callback= self.s_parse)
+            yield response.follow(next_page, callback= self.parse)
 
 
     def new_parse(self, response, **kwargs):
         link = kwargs['link']
-        len_links = kwargs['len']
-        idx_link = kwargs['idx']
         title = response.xpath('//div[@class="main"]/p//text()').get()
         category = response.xpath('//div[@class="breadcrumb"]//li//span[@itemprop="name"]/text()').getall()[1]
         geo_zone = response.xpath('//div[@class="breadcrumb"]//li//span[@itemprop="name"]/text()').getall()

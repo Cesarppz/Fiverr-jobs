@@ -67,7 +67,7 @@ class Webscrape(scrapy.Spider):
             links = self.click('//div[@class="item-heading"]/a',url)
            # links = set(response.xpath('//article/figure/a/@href').getall())
             for idx, link in enumerate(links):
-                logger.info(f'Category {idx} / {len(links)}')
+                logger.info(f'Links {idx} / {len(links)}')
                 yield response.follow(link, callback=self.new_parse,cb_kwargs={'link':link})
             
  
@@ -128,7 +128,7 @@ class Webscrape(scrapy.Spider):
         options.add_argument('user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0')
         options.add_argument('--headless')
         #options.add_argument("--headless")
-        driver = webdriver.Firefox(executable_path='/home/cesar/Documents/job/web_scraping/javier/agenda/driver/geckodriver', options=options)
+        driver = webdriver.Firefox(executable_path='../drivers/geckodriver.exe', options=options)
 
         #Process
         driver.get(url)
