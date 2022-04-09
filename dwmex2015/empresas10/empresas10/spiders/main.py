@@ -16,6 +16,7 @@ mes = datetime.now().month
 dia = datetime.now().day
 year = datetime.now().year
 
+pattern_email = re.compile(r'.*@.*\..*')
 pattern_geozone = re.compile(r'\d+ (.*)')
 main_url = 'https://empresas10.com/mex/'
 # cop_pattern = re.compile(r'.*(COP|USD).*')
@@ -100,9 +101,12 @@ class Webscrape(scrapy.Spider):
             whatsapp = None
         except:
             whatsapp = None
-        email =  response.xpath('//p/strong[contains(.,"Email: ")]/parent::p/text()').get()
-        
-
+        email_list =  response.xpath('//p/strong[contains(.,"Email:")]/parent::p/text()').getall()
+        email_box = []
+        for i in email_list:
+            if re.match(pattern_email,i.strip()):
+                email_box.append(i.strip())
+        email = ' - '.join(list(set(email_box)))
         yield{
             'Nombre empresa':title,
             'Ciudad':geo_zone,
