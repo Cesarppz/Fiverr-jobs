@@ -14,7 +14,7 @@ mes = datetime.now().month
 dia = datetime.now().day
 year = datetime.now().year
 
-pattern = re.compile(r'https://putasvipmexico.com/(.*)/(.*)(\?page=.)?')
+pattern = re.compile(r'https://putasvipmexico.com/(.*)/(.*)(\?page=.)?.*')
 main_url = 'https://putasvipmexico.com'
 # cop_pattern = re.compile(r'.*(COP|USD).*')
 
@@ -114,7 +114,7 @@ class Webscrape(scrapy.Spider):
         
         title = ' '.join(response.xpath('//div[@class="title-ad-page"]/h1//text()').getall()).strip()
         
-        geo_zone = kwargs['geo_zone']
+        geo_zone = kwargs['geo_zone'].split('?')[0]
         #Categoria
         category = kwargs['category']       
         #Description

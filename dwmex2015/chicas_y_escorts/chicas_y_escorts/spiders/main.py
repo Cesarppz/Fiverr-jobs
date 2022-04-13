@@ -74,7 +74,7 @@ class Webscrape(scrapy.Spider):
         
         title = response.xpath('//h1/text()').get()
         
-        geo_zone = ' '.join(response.xpath('//div[@class="container"]/text()').getall()).strip()
+        geo_zone = title.split('-')[1].strip()
         #Categoria
         category =  geo_zone
         #Description

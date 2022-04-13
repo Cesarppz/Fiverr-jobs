@@ -72,7 +72,7 @@ class Webscrape(scrapy.Spider):
 
     def new_parse(self, response, **kwargs):
         link = kwargs['link']
-
+        link = 'https://www.bomboncitasregias/'+link
         
         title = response.xpath('//font[@size="7"]/text()').get()
         try:
@@ -81,6 +81,8 @@ class Webscrape(scrapy.Spider):
             geo_zone = None
         #Categoria
         category =  response.xpath('//font[@size="2"][@color="#800000"]/b/text()').get()
+        if category == None:
+            category = 'No category'
         #Description
         try:
             description = self.remove_spaces(' '.join(response.xpath('//b[text()="Descripción"]/ancestor::tr/following-sibling::tr//font/text()').getall()).strip())

@@ -80,7 +80,7 @@ class Webscrape(scrapy.Spider):
         link = kwargs['link']
         category = kwargs['category']
         
-        title = response.xpath('//h2[@class="single-escort-name"]/text()').get().split('-')[0]
+        title = response.xpath('//h2[@class="single-escort-name"]/text()').get().split('-')[0].replace('.','')
         
         geo_zone = response.xpath('//h2[@class="single-escort-name"]/text()').get().split('-')[1]
         if category == 'No category':

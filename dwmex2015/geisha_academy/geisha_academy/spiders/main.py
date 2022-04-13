@@ -133,7 +133,7 @@ class Webscrape(scrapy.Spider):
         options.add_argument('--private')
         options.add_argument('--no-sandbox')
         options.add_argument('user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0')
-        #options.add_argument("--headless")
+        options.add_argument("--headless")
         driver = webdriver.Firefox(executable_path='../driver/geckodriver', options=options)
         profile = webdriver.FirefoxProfile()
         profile.set_preference("general.useragent.override", "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:98.0) Gecko/20100101 Firefox/98.0")
