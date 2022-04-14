@@ -69,54 +69,57 @@ class Webscrape(scrapy.Spider):
                 yield response.follow(link, callback=self.parse)
 
         else:
-            links = set(response.xpath('//h2/span[@itemprop="name"]/ancestor::a/@href').getall())
-            for i in range(1,len(links)+1):
+            try:
+                links = set(response.xpath('//h2/span[@itemprop="name"]/ancestor::a/@href').getall())
+                for idx in range(1,len(links)+1):
 
-                title = response.xpath('//ul[@class="list"]/li[1]//h2/span[@itemprop="name"]/text()').get()
-                try:
-                    geo_zone = response.xpath('//ul[@class="list"]/li[1]//div[@class="l-address"]/span[@itemprop="addressRegion"]/text()').get().replace(',','').strip()
-                    if input_geozone == 'todas':
-                        geo_zone = geo_zone
-                    else:
-                        if geo_zone.lower() != input_geozone:
-                            break
-                        else:
+                    title = response.xpath(f'//ul[@class="list"]/li[{idx}]//h2/span[@itemprop="name"]/text()').get()
+                    try:
+                        geo_zone = response.xpath(f'//ul[@class="list"]/li[{idx}]//div[@class="l-address"]/span[@itemprop="addressRegion"]/text()').get().replace(',','').strip()
+                        if input_geozone == 'todas':
                             geo_zone = geo_zone
-                except:
-                    geo_zone = None
-                #Categoria
-                category =  response.xpath('//ul[@class="list"]/li[1]//div[@class="l-categoria-tags"]/a/span/text()').get()
+                        else:
+                            if geo_zone.lower() != input_geozone:
+                                break
+                            else:
+                                geo_zone = geo_zone
+                    except:
+                        geo_zone = None
+                    #Categoria
+                    category =  response.xpath(f'//ul[@class="list"]/li[{idx}]//div[@class="l-categoria-tags"]/a/span/text()').get()
 
-                phone = response.xpath('//ul[@class="list"]/li[1]//span[@itemprop="telephone"]/text()').get().replace(',','').strip()
-                try:
-                    postal =  response.xpath('//ul[@class="list"]/li[1]//div[@class="l-address"]/span[@itemprop="postalCode"]/text()').get().replace(',','').strip()
-                except:
-                    postal = None
-                try:
-                    whatsapp = None
-                except:
-                    whatsapp = None
-                email =  None
-                try:
-                    link =response.xpath('//ul[@class="list"]/li[1]//div[@class="row l-btn-container"]//span[@class="icon-web"]/parent::a/@href').get()
-                except:
-                    link = None
-                
+                    phone = response.xpath(f'//ul[@class="list"]/li[{idx}]//span[@itemprop="telephone"]/text()').get().replace(',','').strip()
+                    try:
+                        postal =  response.xpath(f'//ul[@class="list"]/li[{idx}]//div[@class="l-address"]/span[@itemprop="postalCode"]/text()').get().replace(',','').strip()
+                    except:
+                        postal = None
+                    try:
+                        whatsapp = None
+                    except:
+                        whatsapp = None
+                    email =  None
+                    try:
+                        link =response.xpath(f'//ul[@class="list"]/li[{idx}]//div[@class="row l-btn-container"]//span[@class="icon-web"]/parent::a/@href').get()
+                    except:
+                        link = None
+                    
 
-                yield{
-                    'Nombre empresa':title,
-                    'Ciudad':geo_zone,
-                    'Categoría':category,
-                    'Titulo del Anuncio':title,
-                    'Telf':phone,
-                    'WhatsApp de Contacto Numero':None,
-                    'WhatsApp':whatsapp,
-                    'Email':email,
-                    'Postal':postal,
-                    'Web':link,
-                    'Nombre de la Página':'Seccion Amarilla'
-                    }
-                
+                    yield{
+                        'Nombre empresa':title,
+                        'Ciudad':geo_zone,
+                        'Categoría':category,
+                        'Titulo del Anuncio':title,
+                        'Telf':phone,
+                        'WhatsApp de Contacto Numero':None,
+                        'WhatsApp':whatsapp,
+                        'Email':email,
+                        'Postal':postal,
+                        'Web':link,
+                        'Nombre de la Página':'Seccion Amarilla'
+                        }
+            except:
+                pass
+                    
  
         
         next_page = response.xpath('//span[@class="icon-page-right"]/parent::a/@href').get()
